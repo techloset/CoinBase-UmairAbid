@@ -1,3 +1,4 @@
+
 .provide{
   background-image: url(./Image/BG.svg);
 }
@@ -21,4 +22,7 @@
 }
 .Discover{
   background-image: url('./Image/Blog2.webp');
+}
+.bitcoin{
+  font-weight: 700;
 }

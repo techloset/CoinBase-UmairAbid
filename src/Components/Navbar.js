@@ -1,90 +1,97 @@
-
-
-import { Link } from 'react-router-dom'
-import Logo from '../Image/Logo.svg'
-import { CgMenuBoxed, CgClose } from 'react-icons/cg'
-import { useState } from 'react'
-import React from 'react'
+import { Link } from "react-router-dom";
+import Logo from "../Image/coinbase.svg";
+import Drop from '../Image/dropdown.svg'
+import { CgMenuBoxed, CgClose } from "react-icons/cg";
+import { useState } from "react";
+import React from "react";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  function dropDown(){
+    setOpen(!open)
+  }
   return (
-    <header className=''>
-      <div className='flex items-center justify-between w-[90%] xl:max-w-7xl mx-auto  max-md:flex-wrap '>
-        <img src={Logo} alt="" className='mt-8 md:mt-10 w-[200px] md:w-[294px] ' />
-        <div className='md:hidden block mt-10 mr-2'>
-          <CgMenuBoxed className='h-6 w-6 cursor-pointer' onClick={() => setOpen(!open)} />
+    <header className="">
+      
+      <div className="flex items-center justify-between  mx-[50px] lg:mx-[96px]  max-md:flex-wrap ">
+        <img src={Logo} alt="" className="mt-8 md:mt-12 mb-[44px] " />
+        <div className="md:hidden block  mr-2">
+          <CgMenuBoxed
+            className="h-7 w-7 cursor-pointer"
+            onClick={() => setOpen(!open)}
+          />
         </div>
+        
 
         {/* <CgMenuBoxed className='md:hidden block h-6 w-6 cursor-pointer' onClick={()=>setOpen(!open)} /> */}
-        <nav className={` w-full flex items-center justify-left md:justify-end md:w-auto`}>
-
-
-
+        <nav
+          className={` w-full flex items-center justify-left md:justify-end md:w-auto`}
+        >
+          
           {/* <nav className={`${open ? "block" : "hidden"}w-full md:flex md:items-center md:w-auto`}> */}
-          <ul className={`text-base text-gray-600 flex-col mt-[20px] ${open ? 'block' : "hidden"} md:flex md:flex-row md:justify-between md:items-center `}>
-            <Link to='/' className=' block text-black font-semibold pt-2 mx-3 lg:mx-7'>Home</Link>
-            <Link to='/about' className='block text-black font-semibold  mx-3 lg:mx-7 whitespace-nowrap pt-2'>About Us</Link>
-            <Link to='/blog' className='block text-black font-semibold  mx-3 lg:mx-7 pt-2'>Blog</Link>
-            <Link to='/contact' className='block  text-black font-semibold  mx-3 lg:mx-7 whitespace-nowrap pt-2'>Contact Us</Link>
-            <select className=" p-2 text-gray-500 bg-white border xl:ml-[100px] rounded-md mx-2 lg:mx-5 mt-2 shadow-sm outline-none appearance-none focus:border-indigo-600">
-              <option>Sell BitCoin</option>
-              <option>Gift Card</option>
-            </select>
-            <button className='px-8 py-2.5 block h-12 mt-5 bg-gradient-to-b from-blue-500 to-purple-500 text-white text-justify rounded-3xl '>Login</button>
+          <ul
+            className={`text-base text-gray-600 flex-col mt-[20px] ${
+              open ? "block" : "hidden"
+            } md:flex md:flex-row md:justify-between md:items-center `}
+          >
+            <Link
+              to="/"
+              className=" block text-black font-bold text-[14px] pt-2 mx-3 lg:mx-7"
+            >
+              Home
+            </Link>
+            <Link
+              to="/about"
+              className="block text-black font-bold text-[14px] mx-3 lg:mx-7 whitespace-nowrap pt-2"
+            >
+              About Us
+            </Link>
+            <Link
+              to="/blog"
+              className="block text-black font-bold text-[14px] mx-3 lg:mx-7 pt-2"
+            >
+              Blog
+            </Link>
+            <Link
+              to="/contact"
+              className="block  text-black font-bold text-[14px] mx-3 lg:mx-7 whitespace-nowrap pt-2"
+            >
+              Contact Us
+            </Link>
+            <div className='flex  justify-center  mr-5 gap-5'>
+          <button id="dropdownOffsetButton"  onClick={dropDown}
+          data-dropdown-toggle="dropdownOffset" 
+          data-dropdown-offset-distance="10" data-dropdown-offset-skidding="100" 
+          data-dropdown-placement="right" className="text-[#333333] text-[14px] max-md:hidden h-fit mt-[10px] 
+            focus:ring-blue-300 font-bold
+          text-md  text-center inline-flex items-center 
+            "
+             type="button">Sell Bitcoin/ Giftcard <img src={Drop} alt="" />
+              </button>  
+             
+          {/* <!-- Dropdown menu --> */}
+          <div id="dropdownOffset" class={`z-10 mt-[40px] ml-12 border-[1px] border-[#E0E0E0]  max-md:hidden absolute  opacity-80 bg-white divide-y divide-gray-100 rounded-lg shadow w-36 dark:bg-white-700  ${open? 'block':'hidden'}   `}>
+            <ul className=" text-sm  text-black dark:text-gray-200" aria-labelledby="dropdownDefault">
+              <li>
+                <a href="#" className="block px-4 py-2 text-[#333333] text-[12px] hover:bg-white ">Sell Bitcoin</a>
+              </li>
+              <li>
+                <a href="#" className="block pl-4 py-3 mt-2 font-normal text-sm text-[#FFFFFF] text-[12px] rounded-bl-lg rounded-br-lg dark:hover:bg-white " style={{ background: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)'}}>Sell Giftcard</a>
+              </li>
+              
+            </ul>
+          </div>
+          </div>  
+       
+            <button className="text-white  rounded-[100px] w-[157px] h-[54px] font-bold max-md:mb-10 max-md:mt-3 text-[14px] text-center"   style={{ background: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)' }}>
+            LOGIN
+          </button> 
           </ul>
-
         </nav>
+        
       </div>
-
+      
     </header>
-  )
-}
+  );
+};
 
-export default Navbar
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default Navbar;
