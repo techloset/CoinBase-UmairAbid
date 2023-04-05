@@ -24,8 +24,8 @@ function LandingPage() {
             CoinBase is a platform for trading your bitcoin and giftcard at the
             best rate, why not give us a trial.
           </p>
-          <button className="w-[157px] h-[54px] bg-[#FFFFFF] mt-[10px] md:mt-[30px] rounded-[100px]   ">
-            Get Started
+          <button className="w-[157px] h-[54px] bg-[#FFFFFF] mt-[10px] md:mt-[30px] rounded-[100px]   "   >
+           <p className=" bg-gradient-to-b from-pink-500 to-indigo-700 text-transparent bg-clip-text text-[14px] font-bold"> Get Started</p>
           </button>
         </div>
         <div className=" mx-[3px] ">
@@ -186,7 +186,7 @@ function LandingPage() {
       </div>
       {/* Rectangle */}
       <div className="rectangle w-[100%] mx-auto h-[519px]  mt-[50px] bg-cover bg-center flex items-center justify-center ">
-        <div className="border  w-[90%] sm:w-[70%]  h-[85%] rounded-[30px] mt-[200px] mx-auto bg-white shadow-md shadow-slate-400  ">
+        <div className="border  w-[90%] sm:w-[70%]  h-[85%] rounded-[30px] mt-[200px] mx-auto bg-white shadow-sm shadow-slate-200  ">
           <div className="flex  flex-col justify-center items-center self-center">
             <p className="bg-gradient-to-b from-pink-500 to-indigo-700 text-transparent bg-clip-text font-bold text-3xl text-center mt-[30px] ">
               Trade from anywhere
@@ -198,7 +198,6 @@ function LandingPage() {
             <div className="border md:h-[150px] lg:h-[200px] xl:h-[226px]  w-[30%] border-gray-300 rounded-[15px] flex flex-col justify-center items-center self-center gap-5 sm:gap-10 text-center ">
               <img
                 src={Bitcoin}
-                alt=""
                 className="w-[60px] h-[60px] pt-4 md:pt-0"
               />
               <p className="font-bold text-[16px]">Bitcoin</p>

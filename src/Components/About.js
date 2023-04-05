@@ -29,7 +29,7 @@ function About() {
           <img src={Img} alt="" className=" " />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center px-[20px]">
+      <div className="flex flex-col justify-center items-center px-[20px] mt-[-8%] ">
         <p className="max-w-[512px] text-[18px] font-bold leading-[40px] bg-gradient-to-b from-pink-500 to-indigo-700 text-transparent bg-clip-text text-center ">
           “Morbi sagittis ultricies ex, a tempus lorem suscipit non. Donec
           semper leo ut lobortis condimentum. Orci varius natoque penatibus et
@@ -72,7 +72,7 @@ function About() {
       <div className="flex flex-row justify-center    mt-[50px]">
         <div className="max-w-[418px] flex flex-col justify-between max-sm:gap-36 mb-[70px] text-right pl-2 ">
           <div>
-            <p className="text-[32px] font-bold text-pink-400 mb-5">May 2010</p>
+            <p className="text-[32px] font-bold text-[#DC66A2] mb-5">May 2010</p>
             <p className="text-[16px] font-normal text-black leading-[30px]  ">
               Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.
               Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex
@@ -81,7 +81,7 @@ function About() {
             </p>
           </div>
           <div>
-            <p className="text-[32px] font-bold text-pink-400 mb-5">May 2019</p>
+            <p className="text-[32px] font-bold text-[#DC66A2] mb-5">May 2019</p>
             <p className="text-[16px] font-normal text-black leading-[30px]  ">
               Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.
               Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex
@@ -91,13 +91,13 @@ function About() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center  ">
-          <img src={Tree} alt="" className=" h-full " />
+          <img src={Tree} alt="" className=" h-[751px] " />
           <p className="text-[12px] font-bold text-black mt-[10px] ">
             To be continue…
           </p>
         </div>
         <div className="max-w-[418px] flex flex-col justify-center mb-[50px] pr-2 ">
-          <p className="text-[32px] font-bold text-pink-400 mb-5">May 2017</p>
+          <p className="text-[32px] font-bold text-[#DC66A2] mb-5">May 2017</p>
           <p className="text-[16px] font-normal text-black leading-[30px] ">
             Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem.
             Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum.

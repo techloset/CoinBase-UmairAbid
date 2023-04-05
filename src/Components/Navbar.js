@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <header className="">
       
-      <div className="flex items-center justify-between  mx-[50px] lg:mx-[96px]  max-md:flex-wrap ">
+      <div className="flex items-center justify-between  mx-[30px] lg:mx-[96px]  max-md:flex-wrap ">
         <img src={Logo} alt="" className="mt-8 md:mt-12 mb-[44px] " />
         <div className="md:hidden block  mr-2">
           <CgMenuBoxed
@@ -61,7 +61,7 @@ const Navbar = () => {
           <button id="dropdownOffsetButton"  onClick={dropDown}
           data-dropdown-toggle="dropdownOffset" 
           data-dropdown-offset-distance="10" data-dropdown-offset-skidding="100" 
-          data-dropdown-placement="right" className="text-[#333333] text-[14px] max-md:hidden h-fit mt-[10px] 
+          data-dropdown-placement="right" className="text-[#333333] text-[14px] font-bold max-md:hidden h-fit mt-[10px] 
             focus:ring-blue-300 font-bold
           text-md  text-center inline-flex items-center 
             "
