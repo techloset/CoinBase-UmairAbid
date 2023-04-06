@@ -3,6 +3,7 @@ import IMG from "../Image/IMG6.webp";
 import IMG7 from "../Image/img7.png";
 import Date from "../Image/Date.png";
 import social from "../Image/social.png";
+import path from '../Image/p.png'
 import img from "../Image/img8.webp";
 import paginations from "../Image/paginations.png";
 import Discover from "./Discover";
@@ -10,8 +11,9 @@ import { Link } from "react-router-dom";
 function Blog() {
   return (
     <div>
-      <div className="Back bg-no-repeat bg-cover  flex-col h-[1000px] sm:h-[1000px] md:h-[1000px] lg:h-[950px] xl:h-[900px] flex lg:flex-row justify-center max-lg:relative max-lg:items-center lg:justify-between ">
-        <div className=" mt-[50px] max-lg:-top-[1%] max-lg:mx-5 max-lg:absolute lg:mt-[100px] xl:mt-[152px] lg:ml-[100px] xl:ml-[182px]  flex flex-col  ">
+      <div className="flex flex-col justify-between" style={{ background: " linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%)" }}>
+      <div className=" flex-col  flex lg:flex-row justify-center  max-lg:items-center lg:justify-between ">
+        <div className=" mt-[50px]  max-lg:mx-5  lg:mt-[100px] xl:mt-[152px] lg:ml-[100px] xl:ml-[182px]  flex flex-col  ">
           <p className="text-[12px] font-normal text-white ">HOME/BLOG</p>
           <p className="  text-[40px] font-bold text-white leading-[50px]  mt-[16px] md:leading-[60px]">
             Stay updated, <br /> Never miss a post.
@@ -21,9 +23,11 @@ function Blog() {
             post.
           </p>
         </div>
-        <div className="mt-32 sm:mt-10 lg:mt-[28px]max-lg:mx-5 lg:mr-[30px] max-lg:top-[20%] max-lg:absolute xl:mr-[176px] max-w-[527px]">
+        <div className="mb-10 mt-10 lg:mt-[28px] max-lg:mx-5 lg:mr-[30px]  xl:mr-[176px] max-w-[527px]">
           <img src={IMG} alt="" className=" " />
         </div>
+      </div>
+      <img src={path} alt="" className="" />
       </div>
 
       <div className="flex flex-col  justify-center items-center mt-[20px]">
@@ -95,7 +99,7 @@ function Blog() {
       <div className="flex justify-center items-center mx-3 my-36">
         <img src={paginations} alt="" />
       </div>
-    </div>
+    </div >
   );
 }
 export default Blog;

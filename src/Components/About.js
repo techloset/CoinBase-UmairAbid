@@ -7,29 +7,33 @@ import Support from "../Image/Support.svg";
 import Customer from "../Image/Customer.svg";
 import Medal from "../Image/Medal.svg";
 import Tree from "../Image/Tree.svg";
+import path from '../Image/p.png'
 // import Rectangle from '../Image/Rectangle294.svg'
 // import Rectangle2 from '../Image/Rectangle295.svg'
 // import Rectangle3 from '../Image/Rectangle293.svg'
 function About() {
   return (
     <div>
-      <div className="Back bg-no-repeat bg-cover  flex-col h-[1000px] sm:h-[1000px] md:h-[1000px] lg:h-[950px] xl:h-[900px] flex lg:flex-row justify-center max-lg:relative max-lg:items-center lg:justify-between ">
-        <div className=" mt-[50px] max-lg:-top-[1%] max-lg:mx-5 max-lg:absolute lg:mt-[100px] xl:mt-[152px] lg:ml-[100px] xl:ml-[182px]  flex flex-col  ">
-          <p className="text-[12px] font-normal text-white ">HOME/ABOUT US</p>
-          <p className="  text-[40px] font-bold text-white leading-[50px]  mt-[16px] md:leading-[60px]">
-            Great service, <br />
-            Professional support
-          </p>
-          <p className="  mt-[20px] leading-[27px]  text-[18px] font-normal text-white">
-            CoinBase is a platform for trading your bitcoin and <br />
-            giftcard at the best rate, why not give us a trial.
-          </p>
+      <div className="flex flex-col justify-between" style={{ background: " linear-gradient(174.48deg, #FD749B -12.41%, #281AC8 88.56%)" }}>
+        <div className="  flex-col  flex lg:flex-row justify-center  max-lg:items-center lg:justify-between ">
+          <div className=" mt-[50px] mx-5  xl:mt-[152px] lg:ml-[100px] xl:ml-[182px]  flex flex-col  ">
+            <p className="text-[12px] font-normal text-white ">HOME/ABOUT US</p>
+            <p className="  text-[40px] font-bold text-white leading-[50px]  mt-[16px] md:leading-[60px]">
+              Great service, <br />
+              Professional support
+            </p>
+            <p className="  mt-[20px] leading-[27px]  text-[18px] font-normal text-white">
+              CoinBase is a platform for trading your bitcoin and <br />
+              giftcard at the best rate, why not give us a trial.
+            </p>
+          </div>
+          <div className="mt-10 mb-[50px] sm:mt-24 lg:mt-[98px] max-lg:mx-5 lg:mr-[30px]  xl:mr-[168px] max-w-[527px]">
+            <img src={Img} alt="" className=" " />
+          </div>
         </div>
-        <div className="mt-44 sm:mt-24 lg:mt-[98px] max-lg:mx-5 lg:mr-[30px] max-lg:top-[20%] max-lg:absolute xl:mr-[168px] max-w-[527px]">
-          <img src={Img} alt="" className=" " />
-        </div>
+        <img src={path} alt="" className="" />
       </div>
-      <div className="flex flex-col justify-center items-center px-[20px] mt-[-8%] ">
+      <div className="flex flex-col justify-center items-center px-[20px] ">
         <p className="max-w-[512px] text-[18px] font-bold leading-[40px] bg-gradient-to-b from-pink-500 to-indigo-700 text-transparent bg-clip-text text-center ">
           “Morbi sagittis ultricies ex, a tempus lorem suscipit non. Donec
           semper leo ut lobortis condimentum. Orci varius natoque penatibus et
@@ -154,12 +158,12 @@ function About() {
             placeholder="EMAIL "
             className="max-w-[388px] h-[40px] sm:h-[54px] rounded-[100px] border text-[20px] font-normal placeholder:text-black pl-[20px] border-pink-400"
           />
-         <button className="text-white  rounded-[100px] w-[100px] sm:w-[157px] h-[40px] sm:h-[54px] font-bold text-[14px] text-center"   style={{ background: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)' }}>
+          <button className="text-white  rounded-[100px] w-[100px] sm:w-[157px] h-[40px] sm:h-[54px] font-bold text-[14px] text-center" style={{ background: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)' }}>
             DISCOVER
           </button>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

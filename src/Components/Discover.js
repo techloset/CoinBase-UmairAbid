@@ -3,17 +3,25 @@ import Reference from "../Image/Reference.png";
 import Facebook from "../Image/Facebook.svg";
 import Twitter from "../Image/Twitter.svg";
 import Youtube from "../Image/Youtube.svg";
+import path from '../Image/p.png';
+
 
 function Discover() {
   return (
     <div>
-      <div className="Discover bg-center bg-cover w-[100%] h-[747px] flex flex-col text-center  items-center">
-        <p className="text-[32px] font-bold leading-[45px] text-[#FFFFFF] mt-[220px] max-w-[930px]">
+      <div className="flex flex-col justify-center ">
+
+   
+      <div className="Discover bg-center bg-cover bg-no-repeat w-[100%]  flex flex-col text-center items-center ">
+        <p className="text-[32px] font-bold leading-[45px] text-[#FFFFFF] mt-[241px] max-w-[930px]">
           ETH 0 NAIRA EXCHANGE RATE IS NOW #400 PER Transactions
         </p>
-        <p className="text-[#FFFFFF] text-[10px] mt-[17px] font-normal ">
+        <p className="text-[#FFFFFF] text-[10px] mt-[17px] mb-[200px] font-normal ">
           19 JUNE, 2019 <span className="border-l px-1"> BUSINESS</span>
         </p>
+        <img src={path} alt="" className="w-[100%]" />
+      </div>
+     
       </div>
       <div className="w-[80%] md:w-[52%]  text-[16px] leading-[28px] text-[#333333] flex flex-col gap-y-10 justify-center mx-auto">
         <p>

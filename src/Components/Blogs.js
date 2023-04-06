@@ -10,16 +10,16 @@ function Blogs() {
   return (
     <div>
       <div className="flex flex-col justify-center items-center">
-        <p className="bg-gradient-to-b from-pink-500 to-indigo-700 text-transparent bg-clip-text mt-[142px] text-center text-[28px] font-bold">
+        <p className="bg-gradient-to-b from-pink-500 to-indigo-700 text-transparent bg-clip-text mt-[230px] text-center text-[28px] font-bold">
           Our Blogs
         </p>
         <img src={Line} alt="" className=" " />
-        <p className="text-[16px] font-normal my-[50px] mx-[2%]">
+        <p className="text-[16px] font-normal my-[50px] mx-[4%]">
           Get to know the latest stuff via our blog post.
         </p>
       </div>
       <div className="flex flex-col items-center mx-auto gap-5 sm:flex sm:justify-center sm:items-center  sm:relative">
-        <div className="border border-gray-600 w-[65%] h-auto sm:w-[200px] md:w-[280px] lg:w-[370px] sm:h-[286px] p-10 sm:p-4 sm:pr-2 md:p-6 lg:p-10 rounded-[15px] sm:absolute sm:left-[15%] sm:z-10 ">
+        <div className="border border-gray-600 w-[65%] h-auto sm:w-[200px] md:w-[280px] lg:w-[370px] sm:h-[286px] p-5 sm:p-4 sm:pr-2 md:p-6 lg:p-10 rounded-[15px] sm:absolute sm:left-[15%] sm:z-10 ">
           <div className="flex gap-5 mb-6 sm:mb-2 md:mb-4 lg:mb-6">
             <p className="text-[10px] font-normal text-gray-600">
               01 FEB, 2019
@@ -39,7 +39,7 @@ function Blogs() {
             Read More
           </button>
         </div>
-        <div className="border border-pink-400 shadow-md shadow-slate-400 bg-white sm:z-20  w-[80%] h-auto sm:w-[250px] md:w-[350px] lg:w-[465px]   sm:h-[358px] p-14 sm:p-6 md:p-10 lg:p-14 rounded-[15px]">
+        <div className="border border-pink-400 shadow-md shadow-slate-400 bg-white sm:z-20  w-[80%]  sm:w-[250px] md:w-[350px] lg:w-[465px] h-auto sm:h-[400px] md:h-[358px] p-6 sm:p-6 md:p-10 lg:p-14 rounded-[15px]">
           <div className="flex gap-5 mb-4 sm:mb-2 md:mb-4 lg:mb-6">
             <p className="text-[10px] font-normal text-black">19 JUNE, 2019</p>
             <img src={Rectangle} alt="" />
@@ -56,7 +56,7 @@ function Blogs() {
             Read More
           </button>
         </div>
-        <div className="border border-gray-600 w-[65%] h-auto sm:w-[200px] md:w-[280px] lg:w-[370px] sm:h-[286px] p-10 sm:p-4 sm:pl-4 md:pl-6 lg:ml-10 md:p-6 lg:p-10  rounded-[15px] sm:absolute sm:right-[15%] sm:z-10">
+        <div className="border border-gray-600 w-[65%] h-auto sm:w-[200px] md:w-[280px] lg:w-[370px] sm:h-[286px] p-5 sm:p-4 sm:pl-4 md:pl-6 lg:ml-10 md:p-6 lg:p-10  rounded-[15px] sm:absolute sm:right-[15%] sm:z-10">
           <div className="flex gap-5 mb-6 sm:mb-2 md:mb-4 lg:mb-6">
             <p className="text-[10px] font-normal text-gray-600">
               01 FEB, 2019
@@ -78,14 +78,14 @@ function Blogs() {
         </div>
       </div>
       {/* Bubble */}
-      <div className="bubble bg-cover bg-center bg-no-repeat sm:bg-bottom mt-[50px] sm:mt-[150px] -top-[50px] sm:-top-[350px] md:-top-[250px] lg:-top-[250px] xl:-top-[100px]  relative   sm:h-[1386px]  w-[100%] mx-auto flex flex-col justify-center items-center">
+      <div className="bubble bg-cover bg-center bg-no-repeat sm:bg-bottom mt-[50px] sm:mt-[150px] -top-[55px] sm:-top-[400px] md:-top-[350px] lg:-top-[300px] xl:-top-[200px]  relative   sm:h-[1386px]  w-[100%] mx-auto flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
-          <p className="text-center text-[28px] font-bold text-white leading-[42px] mt-[300px] sm:mt-5">
+          <p className="text-center text-[28px] font-bold text-white leading-[42px] mt-[400px] sm:mt-[200px] xl:mt-[5px]">
             10,000 Satisfied clients <br />
             around the world
           </p>
-          <img src={Line} alt="" className="mt-[28px] " />
-          <p className="mt-[45px] max-w-[542px] mx-[3%] text-center text-white font-normal text-[16px]">Yeah! we`re proud with numbers. We`ve helped thousands of clients all around the world with our bespoke service. Hover ontop of them pic to view their testimonials.</p>
+          <img src={Line} alt="" className="mt-[20px] " />
+          <p className="mt-[70px] sm:mt-[45px] max-w-[542px] mx-[3%] text-center text-white font-normal text-[16px]">Yeah! we`re proud with numbers. We`ve helped thousands of clients all around the world with our bespoke service. Hover ontop of them pic to view their testimonials.</p>
         </div>
         <div className="h-[60%] sm:h-[388px]  max-w-[1065px] ">
           <img
@@ -96,12 +96,12 @@ function Blogs() {
         </div>
       </div>
       {/* Mobile */}
-      <div className="mobile w-[100%] items-center bg-center  bg-no-repeat  flex justify-center -top-24  h-[657px]  relative">
+      <div className="mobile w-[100%] items-center bg-center  bg-no-repeat  flex justify-center sm:-top-96 lg:-top-52  h-[657px]  relative">
         <div className="flex flex-col justify-center items-center absolute -top-[250px] mt-24 sm:mt-0 ">
-          <p className="bg-gradient-to-b from-pink-500 to-indigo-900 text-transparent bg-clip-text mt-[150px] text-center leading-[65px] text-[28px] font-bold">
+          <p className="bg-gradient-to-b from-pink-500 to-indigo-900 text-transparent bg-clip-text mt-[50px] sm:mt-[150px] lg:mt-[150px] text-center leading-[65px] text-[28px] font-bold">
             Download our apps
           </p>
-          <img src={Line} alt="" className="h-[40px] w-[50px0] pb-[30px]" />
+          <img src={Line} alt="" className="h-[40px] w-[50px] pb-[30px]" />
           <p className="text-[16px] font-normal leading-[40px] text-center">
             Discover exclusive deals and discounts with <br />
             our mobile experience.
@@ -141,7 +141,7 @@ function Blogs() {
             placeholder="EMAIL "
             className="max-w-[388px] h-[40px] sm:h-[54px] rounded-[100px] border text-[20px] font-normal placeholder:text-black pl-[20px] border-pink-400"
           />
-         <button className="text-white  rounded-[100px] w-[100px] sm:w-[157px] h-[40px] sm:h-[54px] font-bold text-[14px] text-center"   style={{ background: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)' }}>
+          <button className="text-white  rounded-[100px] w-[100px] sm:w-[157px] h-[40px] sm:h-[54px] font-bold text-[14px] text-center" style={{ background: 'linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)' }}>
             DISCOVER
           </button>
         </div>
